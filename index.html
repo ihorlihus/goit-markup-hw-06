@@ -469,7 +469,7 @@
                     </div>
                 </div>
             </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <p class="visually-hidden">lorem</p>
                 <button type="button" data-modal-close>
@@ -479,8 +479,55 @@
                         </use>
                     </svg>
                 </button>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form action="#" class="modal-form">
+                    <div class="modal-field">
+                        <label for="text" class="modal-form-text">
+                            Имя</label>
+                        <input 
+                            type="text" 
+                            name="user=name" 
+                            id="text"
+                            class="modal-form-input"
+                            placeholder="name"
+                            required
+                            minlength="2">
+                    </div>
+                    <div class="modal-field">
+                        <label for="tel" class="modal-form-text">
+                            Телефон</label>
+                        <input 
+                            type="tel" 
+                            name="user=tel" 
+                            id="tel"
+                            class="modal-form-input"
+                            placeholder="tel"
+                            required>
+                    </div>
+                    <div class="modal-field">
+                        <label for="email" 
+                        class="modal-form-text">
+                            Почта</label>
+                        <input 
+                            type="email"
+                            id="email"
+                            name="user=email" 
+                            class="modal-form-input"
+                            placeholder="email"
+                            required>
+                    </div>
+                    <div class="modal-field">
+                        <label for="comment" class="modal-form-text">
+                            Коментарий</label><textarea name="comment" 
+                            id="comment" 
+                            class="modal-form-comment" placeholder="Введите текст">
+                        </textarea>
+                    </div>
+                    <button type="submit">Отправить</button>
+                    <button type="reset">reset</button>
+                </form>
             </div>
         </div>
-        <script src="./js/modal.js"></script>
+        <!-- <script src="./js/modal.js"></script> -->
     </body>
 </html>
