@@ -474,7 +474,7 @@
                             <input 
                                 type="text"
                                 name="follow-email"
-                                class="follow-email-input"
+                                class="follow-email-input transition"
                             placeholder="E-mail"
                             >
                             <button type="submit"
@@ -483,13 +483,12 @@
                     </form>
                 </div>
             </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop " data-modal>
             <div class="modal">
                 <p class="visually-hidden">lorem</p>
                 <button type="button" data-modal-close>
                     <svg class="close-icon">
                         <use href="./images/symbol-defs.svg#icon-close">
-
                         </use>
                     </svg>
                 </button>
@@ -498,37 +497,50 @@
                     <div class="modal-field">
                         <label for="text" class="modal-form-text">
                             Имя</label>
+                            <div class="input-wrap">
                         <input 
                             type="text" 
                             name="user=name" 
                             id="text"
-                            class="modal-form-input"
-                            placeholder="name"
+                            class="modal-form-input transition"
                             required
                             minlength="2">
-                    </div>
+                                <svg class="icon-input">
+                                    <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                                </svg>
+                            </div>
+                        </div>
                     <div class="modal-field">
-                        <label for="tel" class="modal-form-text">
+                        <label for="tel" 
+                            class="modal-form-text">
                             Телефон</label>
+                            <div class="input-wrap">
                         <input 
                             type="tel" 
                             name="user=tel" 
                             id="tel"
-                            class="modal-form-input"
-                            placeholder="tel"
+                            class="modal-form-input transition"
                             required>
+                                <svg class="icon-input">
+                                    <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                                </svg>
+                        </div>
                     </div>
                     <div class="modal-field">
                         <label for="email" 
                         class="modal-form-text">
                             Почта</label>
+                            <div class="input-wrap">
                         <input 
                             type="email"
                             id="email"
                             name="user=email" 
                             class="modal-form-input"
-                            placeholder="email"
                             required>
+                                <svg class="icon-input transition">
+                                    <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                                </svg>
+                        </div>
                     </div>
                     <div class="modal-field">
                         <label for="comment" 
