@@ -763,12 +763,20 @@ focus {
   line-height: 30px;
   /* identical to box height, or 187% */
 
-  align-items: center;
-  text-align: center;
-
   letter-spacing: 0.06em;
 
   color: var(--title-color);
+
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+
+  padding-left: 29px;
+}
+
+.icon-send {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 /* ------------BLOKS------------ */
@@ -886,6 +894,13 @@ focus {
   background: var(--main-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transform: fill 250ms linear;
+}
+
+.close-icon:hover,
+:focus {
+  fill: var(--hover-color);
 }
 
 .modal {
@@ -923,32 +938,19 @@ focus {
   padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
-
   border-radius: 4px;
-
   outline: none;
+
   transition: border-color 250ms linear;
-  transition-timing-function: var(--animation-timing-function);
 }
 
-.modal-form-input:hover,
-:focus {
-  border: 1px solid #2196f3;
+.modal-form-input:focus {
+  border-color: var(--hover-color);
   cursor: pointer;
-}
-
-.modal-form-input:hover + .icon-input {
-  fill: var(--hover-color);
 }
 
 .modal-form-input:focus + .icon-input {
   fill: var(--hover-color);
-}
-
-.modal-form-comment:hover,
-:focus {
-  border: 1px solid #2196f3;
-  cursor: pointer;
 }
 
 /* .modal-form-comment::placeholder,
@@ -979,6 +981,11 @@ focus {
   transition: border-color 250ms linear;
   transition-timing-function: var(--animation-timing-function);
   margin-top: 4px;
+}
+
+.modal-form-comment:focus {
+  border: 1px solid #2196f3;
+  cursor: pointer;
 }
 
 .modal-field {
@@ -1043,6 +1050,11 @@ focus {
   fill: #ffffff;
 }
 
+.policy-link {
+  padding-left: 4px;
+  color: var(--hover-color);
+}
+
 .modal-check:checked + .check-text .check-item {
   background-color: var(--hover-color);
   border: none;
@@ -1070,12 +1082,7 @@ focus {
   cursor: pointer;
 }
 
-/* opacity: (0);
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--animation-timing-function); 
-}*/
-/* .modal-btn:focus,
+.modal-btn:focus,
 .modal-btn:hover {
   opacity: (1);
 
@@ -1088,4 +1095,4 @@ focus {
   color: var(--title-color);
   background-color: var(--button-color);
   outline: none;
-} */
+}

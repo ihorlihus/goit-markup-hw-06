@@ -16,7 +16,7 @@
         <header class="header">
             <div class="container cont-header">                
                 <div class="nav">                
-                    <a class="link nav-link" href="https://ihorlihus.github.io/goit-markup-hw-05/" target="_blank" rel="noopener noreferrer">
+                    <a class="link nav-link" href="https://ihorlihus.github.io/goit-markup-hw-06/" target="_blank" rel="noopener noreferrer">
                         <span class="logo-blue">Web</span>
                         <span class="logo-black">Studio</span>
                     </a>
@@ -33,7 +33,7 @@
                                 </li>
                             <li class="nav-item">
                                 <a class="link header-link" 
-                                    href="https://ihorlihus.github.io/goit-markup-hw-05/">
+                                    href="https://ihorlihus.github.io/goit-markup-hw-06/">
                                     Контакты</a>
                                 </li>
                     </div>
@@ -408,7 +408,7 @@
             <footer class="footer">
                 <div class="container footer-contr">
                     <div class="adress-contr">
-                    <a class="link" href="https://ihorlihus.github.io/goit-markup-hw-05/" 
+                    <a class="link" href="https://ihorlihus.github.io/goit-markup-hw-06/" 
                         target="_blank" 
                         rel="noopener noreferrer">
                         <span class="logo-blue">Web</span><span class="logo-white">Studio</span>
@@ -478,12 +478,19 @@
                             placeholder="E-mail"
                             >
                             <button type="submit"
-                            class="follow-btn">Подписаться</button>
+                            class="follow-btn">
+                            <span>Подписаться</span>
+                            <span><svg class="icon-send">
+                                <use href="images/symbol-defs.svg#icon-icon-send"
+                                width="24"
+                                heigh="24"></use>
+                            </svg></span>
+                        </button>
                         </div>
                     </form>
                 </div>
             </footer>
-        <div class="backdrop " data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <p class="visually-hidden">lorem</p>
                 <button type="button" data-modal-close>
@@ -502,7 +509,7 @@
                             type="text" 
                             name="user=name" 
                             id="text"
-                            class="modal-form-input transition"
+                            class="modal-form-input"
                             required
                             minlength="2">
                                 <svg class="icon-input">
@@ -519,7 +526,7 @@
                             type="tel" 
                             name="user=tel" 
                             id="tel"
-                            class="modal-form-input transition"
+                            class="modal-form-input"
                             required>
                                 <svg class="icon-input">
                                     <use href="./images/symbol-defs.svg#icon-phone-black"></use>
@@ -565,7 +572,7 @@
                                 </svg>
                             </span>
                             Соглашаюсь с рассылкой и принимаю
-                            <a href="">Условия договора</a>
+                            <a class="policy-link" href="">Условия договора</a>
                         </label>
                     </div>
                     <button type="submit"
