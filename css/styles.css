@@ -837,6 +837,8 @@ focus {
   display: inline-block;
 
   /* opacity: (0); */
+  transition: box-shadow 1250ms linear;
+
   transform: scaleY(-100%);
   transform-origin: bottom;
   transition: transform 250ms;
@@ -850,10 +852,13 @@ focus {
 }
 
 .shadow-item {
+  transition: box-shadow 250ms linear;
+}
+.shadow-item:hover,
+.shadow-item:focus {
   display: block;
-  /* padding: 10px 20px;
-
-  text-decoration: none; */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .suggestions-text {
@@ -895,7 +900,7 @@ focus {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transform: fill 250ms linear;
+  transition: fill 250ms linear;
 }
 
 .close-icon:hover,
@@ -1057,7 +1062,7 @@ focus {
 
 .modal-check:checked + .check-text .check-item {
   background-color: var(--hover-color);
-  border: none;
+  border: 2px solid #ffffff;
 }
 
 .modal-btn {
