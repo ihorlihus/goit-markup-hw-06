@@ -539,7 +539,7 @@ img {
   display: flex;
 }
 .f-contacts:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-address {
@@ -573,7 +573,7 @@ focus {
 .follow {
   display: block;
   align-items: baseline;
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .follow-list {
@@ -698,9 +698,6 @@ focus {
 
   color: var(--title-color);
 }
-.ptf-link {
-  color: var(--main-text-color);
-}
 
 .card-title {
   font-size: 18px;
@@ -735,7 +732,7 @@ focus {
   width: 358px;
   height: 50px;
   left: 815px;
-  top: 2787px;
+  top: 50%;
   padding-left: 16px;
 
   background-color: var(--secondary-bg-color);
@@ -750,8 +747,6 @@ focus {
 .follow-btn {
   width: 200px;
   height: 50px;
-  left: 1185px;
-  top: 2787px;
 
   margin-left: 12px;
 
@@ -772,11 +767,18 @@ focus {
   text-align: center;
 
   padding-left: 29px;
+
+  position: relative;
 }
 
 .icon-send {
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
   margin-left: 10px;
-  margin-top: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* ------------BLOKS------------ */
@@ -805,7 +807,6 @@ focus {
 .suggestions-item {
   width: 370px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 
 .subtext-position {
@@ -845,7 +846,11 @@ focus {
   transition-timing-function: var(--animation-timing-function);
 }
 
-.suggestions-item:hover .subtext {
+.ptf-link {
+  color: var(--main-text-color);
+}
+
+.ptf-link:hover .subtext {
   display: block;
   /* opacity: (1); */
   transform: scaleY(1);
